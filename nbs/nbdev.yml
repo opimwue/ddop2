@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "ddop2"
+  site-url: "https://opimwue.github.io/ddop2"
+  description: "Restructuring of ddop"
+  repo-branch: main
+  repo-url: "https://github.com/opimwue/ddop2"
