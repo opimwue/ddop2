@@ -6,12 +6,7 @@ __all__ = ['ACTIVATIONS', 'DeepLearningNewsvendor']
 # %% ../../nbs/05_deepLearningNewsvendor.ipynb 4
 from ._base import BaseNewsvendor, DataDrivenMixin
 from ..utils.validation import check_cu_co
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense
-from tensorflow.keras.backend import switch, less
-from tensorflow.keras.backend import sum as ksum
-from tensorflow import cast
-from tensorflow.random import set_seed
+
 
 from sklearn.utils.validation import check_is_fitted
 import numpy as np
@@ -85,6 +80,15 @@ class DeepLearningNewsvendor(BaseNewsvendor, DataDrivenMixin):
 
     def __init__(self, cu=None, co=None, neurons=[100, 50], activations=['relu', 'relu'], optimizer='adam', epochs=100,
                  random_state=None, verbose=0):
+
+        from tensorflow.keras.models import Sequential
+        from tensorflow.keras.layers import Dense
+        from tensorflow.keras.backend import switch, less
+        from tensorflow.keras.backend import sum as ksum
+        from tensorflow import cast
+        from tensorflow.random import set_seed
+
+
         self.neurons = neurons
         self.activations = activations
         self.optimizer = optimizer
