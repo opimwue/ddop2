@@ -16,6 +16,8 @@ ACTIVATIONS = ['elu', 'selu', 'linear', 'tanh', 'relu', 'softmax', 'softsign', '
 
 # %% ../../nbs/05_deepLearningNewsvendor.ipynb 6
 class DeepLearningNewsvendor(BaseNewsvendor, DataDrivenMixin):
+
+
     
     """A Deep-Learning model to solve the Newsvendor problem.
 
